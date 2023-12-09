@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Zp/jE19i3wI5+p8T8z5gkebo+tMN6gGZk5BoV/Pvhr8ZHgboEmZaIuaz7Zg1a6cU8+fTIzhjzuZt2bYyy1r9hw==" crossorigin="anonymous" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/js/all.min.js" integrity="sha384-csCQ8MI6Lj9vRNFLB6aK0Tq1N2k9V6RrQcZJNE/n9h6EGGoLdAPhm5e6uLREdBVH" crossorigin="anonymous"></script>
+    <style>
+        /* Add this style for responsive image sizing */
+        .glide__slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <header class="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
+            <!-- logo - start -->
+            <a href="/" class="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl" aria-label="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="64" height="64" viewBox="0 0 256 256" xml:space="preserve">
+
+                    <defs>
+                    </defs>
+                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                        <circle cx="28.744" cy="74.56400000000001" r="10.334" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(51,41,41); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        <path d="M 44.399 45.682 v -4.05 H 27.705 v 2.97 v 1.465 v 9.067 h 7.385 c 3.191 0 5.779 2.587 5.779 5.779 v 3.401 c 0 1.964 1.593 3.557 3.557 3.557 h 5.785 V 55.007 C 50.21 50.912 47.838 47.38 44.399 45.682 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(59,101,168); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <circle cx="28.744" cy="74.564" r="5.204" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(239,182,90); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        <circle cx="79.664" cy="74.56400000000001" r="10.334" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(51,41,41); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        <circle cx="79.66399999999999" cy="74.564" r="5.204" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(239,182,90); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+                        <path d="M 73.363 34.722 h 0.721 c 0.878 0 1.589 0.711 1.589 1.589 v 7.446 c 0 0.878 -0.711 1.589 -1.589 1.589 h -0.721 c -2.934 0 -5.312 -2.378 -5.312 -5.312 v 0 C 68.051 37.1 70.429 34.722 73.363 34.722 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,155,36); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 14.54 73.373 h 55.315 c 0 -5.189 6.539 -11.085 11.085 -11.085 L 65.609 35.399 h -6.216 l 5.445 25.722 c 0.245 1.159 -0.05 2.366 -0.801 3.281 l 0 0 c -0.74 0.901 -1.845 1.423 -3.011 1.423 h -16.6 c -1.964 0 -3.557 -1.592 -3.557 -3.557 v -3.401 c 0 -3.191 -2.587 -5.779 -5.779 -5.779 h -8.374 c -5.671 0 -10.745 3.526 -12.723 8.841 l -2.582 6.94 C 10.598 71.051 12.212 73.373 14.54 73.373 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(215,28,34); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 63.812 32.819 h -3.778 v 4.606 c 1.597 0.095 4.084 0.388 5.352 0.975 c 0.539 0.249 1.155 -0.126 1.155 -0.719 v -2.132 C 66.542 34.042 65.32 32.819 63.812 32.819 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,183,125); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 89.224 67.6 c -1.416 -2.975 -4.105 -5.359 -7.713 -6.239 c -4.68 -1.142 -9.697 0.866 -12.289 4.926 c -1.825 2.859 -2.232 6.088 -1.51 9.004 c 0.153 0.617 0.964 0.767 1.356 0.266 c 4.519 -5.771 12.036 -8.515 19.275 -6.887 C 88.965 68.811 89.498 68.177 89.224 67.6 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(193,23,29); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 45.337 33.484 L 45.337 33.484 c 0 3.855 3.125 6.98 6.98 6.98 h 5.979 c 1.525 0 2.761 -1.236 2.761 -2.761 v -4.884 l -4.525 0 c -1.23 0 -2.312 -0.78 -2.729 -1.937 c -1.142 -3.166 -4.752 -6.872 -9.261 -6.872 h 0 c -8.173 0.013 -14.792 6.643 -14.792 14.816 v 5.775 h 10.055 c 1.633 0 3.179 0.376 4.554 1.047 l 0 0.001 c -0.041 -2.131 1.305 -4.261 4.036 -6.392" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(193,23,29); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 59.697 15.373 c 0 5.674 -4.6 10.273 -10.273 10.273 s -11.308 -7.668 -11.308 -13.342 s 5.635 -7.205 11.308 -7.205 S 59.697 9.699 59.697 15.373 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,155,36); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 51.279 25.476 c 4.258 -0.777 7.6 -4.177 8.287 -8.467 l -7.756 -1.862 c -1.704 -0.409 -3.213 1.177 -2.72 2.859 L 51.279 25.476 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(246,183,125); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        <path d="M 4.404 29.495 h 20.941 c 2.432 0 4.404 1.972 4.404 4.404 v 19.189 H 4.404 C 1.972 53.089 0 51.117 0 48.684 V 33.9 C 0 31.467 1.972 29.495 4.404 29.495 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,155,36); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    </g>
+                    </svg>
+      
+              FoodMyDoor
+            </a>
+            <!-- logo - end -->
+      
+             <!-- nav - start -->
+             <nav class="hidden gap-12 lg:flex">
+              <a href="#" class="text-lg font-semibold text-indigo-500"><i class="fas fa-search"></i>Search</a>
+              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Offers</a>
+              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Help</a>
+              <a href="#" class="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700">Cart(0)</a>
+            </nav>
+            <!-- nav - end -->
+      
+            <!-- buttons - start -->
+            <a href="#" class="hidden rounded-lg bg-gray-200 px-8 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:inline-block">Sign Up/Login</a>
+      
+            <button type="button" class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+              </svg>
+              Sign Up/Login
+            </button>
+            <!-- buttons - end -->
+          </header>
+      
+          <section class="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+            <!-- content - start -->
+            <div class="flex flex-col items-center justify-center sm:text-center lg:items-start lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
+              <h1 class="mb-8 text-4xl font-bold text-black sm:text-5xl md:mb-12 md:text-6xl">Savor the Flavor: Your Next Bite Just a Click Away</h1>
+      
+              <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">Discover Delicious Delivered: Effortless Dining, Every Time. Crave. Click. Enjoy</p>
+      
+              <form class="flex w-full gap-2 md:max-w-md">
+                <input placeholder="Location" class="w-full flex-1 rounded border bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 outline-none ring-indigo-300 transition duration-100 focus:ring" />
+      
+                <button class="inline-block rounded bg-indigo-500 px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Search</button>
+              </form>
+            </div>
+            <!-- content - end -->
+      
+            <!-- image - start -->
+            <div class="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+              <img src="pizza.avif" loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center" />
+            </div>
+            <!-- image - end -->
+          </section>
+        </div>
+      </div>
+
+
+      <!--NEXT CONTENT-->
+      <!--NEXT CONTENT-->
+     <!--NEXT CONTENT-->
+<!--NEXT CONTENT-->
+<div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+        <h2 class="mb-4  text-2xl font-bold text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">Best offers for you</h2>
+        
+
+<div id="indicators-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="img1.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img2.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img3.avif" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img4.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="img5.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+    </div>
+</div>
+   <!--next-->
+   <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div class="mb-6 flex items-end justify-between gap-4">
+        <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl">Top Restaurant Chains in City</h2>
+  
+        <a href="#" class="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">Show more</a>
+      </div>
+  
+      <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2 md:gap-x-6 lg:grid-cols-3 xl:grid-cols-4">
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f1.avif" loading="lazy" alt="Photo by Rachit Tank" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+  
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">KFC</a>
+  
+            <div class="flex items-end gap">
+              <img src="logo.png">
+              <span class="font-bold text-gray-800 lg:text-lg">4.3</span>
+            </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f2.avif" loading="lazy" alt="Photo by Galina N" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Subway</a>
+  
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">4.1</span>
+              </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f3.avif" loading="lazy" alt="Photo by eniko kis" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">McDonald's</a>
+  
+            
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">4.1</span>
+              </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f4.avif" loading="lazy" alt="Photo by Irene Kredenets" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Burger King</a>
+  
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">4.6</span>
+              </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f5.avif" loading="lazy" alt="Photo by Charles Deluvio" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Doon Darbar</a>
+  
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">3.8</span>
+              </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f6.avif" loading="lazy" alt="Photo by Fernando Lavin" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Annapurna</a>
+  
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">3.8</span>
+              </div>
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f7.avif" loading="lazy" alt="Photo by Kiran CK" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Chinese Point</a>
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">4.7</span>
+              </div>
+          
+          </div>
+        </div>
+        <!-- product - end -->
+  
+        <!-- product - start -->
+        <div>
+          <a href="#" class="group relative mb-2 block h-80 overflow-hidden rounded-lg bg-gray-100 lg:mb-3">
+            <img src="f8.avif" loading="lazy" alt="Photo by Fakurian Design" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          </a>
+  
+          <div>
+            <a href="#" class="hover:gray-800 mb-1 text-gray-500 transition duration-100 lg:text-lg">Kathi Junction</a>
+            <div class="flex items-end gap">
+                <img src="logo.png">
+                <span class="font-bold text-gray-800 lg:text-lg">4.6</span>
+              </div>
+           
+          </div>
+        </div>
+        <!-- product - end -->
+      </div>
+    </div>
+  </div>
+
+
+  
+</body>
+</html>
